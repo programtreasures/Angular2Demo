@@ -19,7 +19,10 @@ var EmployeeComponent = (function () {
 EmployeeComponent = __decorate([
     core_1.Component({
         selector: 'my-employee',
-        templateUrl: 'app/employee/employee.component.html'
+        templateUrl: 'app/employee/employee.component.html',
+        styles: ["table {\n                color: #369;\n                font-family: Arial, Helvetica, sans-serif;\n                font-size: large;\n                border: 1px solid black;\n            }",
+            "td {\n                    border: 1px solid red;\n                }"
+        ],
     })
 ], EmployeeComponent);
 exports.EmployeeComponent = EmployeeComponent;
