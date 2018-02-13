@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
     templateUrl: 'app/app.component.html'
 }) 
 export class AppComponent{
-    name:string = "Test fdas fdsa"
+    pageTitle:string = "Employee Details"
 }
