@@ -10,6 +10,9 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageTitle = "Employee Details";
+        this.imageUrl = "http://media.moddb.com/images/downloads/1/87/86682/bluedemobutton.jpg";
+        this.innerHtmlText = "<b>Awsome demo</b><script>alert('hello')</script>";
+        this.isDisabled = true;
     }
     return AppComponent;
 }());
