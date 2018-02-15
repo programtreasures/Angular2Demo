@@ -20,4 +20,10 @@ export class EmployeeComponent {
     lastname: string = "Padukone";
     gender: string = "Female";
     age: number = 25;
+
+    isShowDetails: boolean = false;
+
+    toggleDetails() {
+        this.isShowDetails = !this.isShowDetails;
+    }
 }

@@ -13,7 +13,11 @@ var EmployeeComponent = (function () {
         this.lastname = "Padukone";
         this.gender = "Female";
         this.age = 25;
+        this.isShowDetails = false;
     }
+    EmployeeComponent.prototype.toggleDetails = function () {
+        this.isShowDetails = !this.isShowDetails;
+    };
     return EmployeeComponent;
 }());
 EmployeeComponent = __decorate([

@@ -15,15 +15,15 @@
             {{lastname}}
         </td>
     </tr>
-    <tr>
+    <tr *ngIf="isShowDetails">
         <td>
             Gender
         </td>
         <td>
             {{gender}}
         </td>
-    </tr>
-    <tr>
+    </tr>    
+    <tr *ngIf="isShowDetails">
         <td>
             Age
         </td>
@@ -32,3 +32,5 @@
         </td>
     </tr>
 </table>
+
+<button (click)="toggleDetails()"> {{isShowDetails ? 'Hide Details' : 'Show Details'}} </button>
