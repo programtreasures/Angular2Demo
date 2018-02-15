@@ -1,7 +1,26 @@
-﻿<h1>
-    {{ pageTitle }}    
+﻿<style>
+    .boldClass {
+        font-weight:bold;
+    }
+    .italicClass {
+        font-style: italic;
+    }
+    .redClass {
+        color:red;
+    }
+</style>
+
+<h1>
+    {{ pageTitle }}
 </h1>
 <img [src]="imageUrl" width="100" alt="Alternate Text" />
 <div innerHtml="{{innerHtmlText}}"></div>
-<button [disabled]="isDisabled">Click me</button>
+
+<button class="boldClass" 
+        [ngClass]="getClasses()">Click me</button>
+
+<input type="text" name="name" id="textId" value="Test" />
 <my-employee></my-employee>
+
+
+

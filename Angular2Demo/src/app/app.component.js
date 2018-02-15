@@ -13,7 +13,16 @@ var AppComponent = (function () {
         this.imageUrl = "http://media.moddb.com/images/downloads/1/87/86682/bluedemobutton.jpg";
         this.innerHtmlText = "<b>Awsome demo</b><script>alert('hello')</script>";
         this.isDisabled = true;
+        this.applyClasses = "italicClass";
+        this.isApplyRedClass = "redClass";
     }
+    AppComponent.prototype.getClasses = function () {
+        var classes = {
+            boldClass: true,
+            italicClass: false
+        };
+        return classes;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
