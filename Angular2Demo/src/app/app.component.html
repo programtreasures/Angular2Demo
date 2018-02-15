@@ -15,9 +15,25 @@
 </h1>
 <img [src]="imageUrl" width="100" alt="Alternate Text" />
 <div innerHtml="{{innerHtmlText}}"></div>
+<br /><br />
 
 <button class="boldClass" 
-        [ngClass]="getClasses()">Click me</button>
+        [ngClass]="getClasses()">Class Binding</button>
+
+<br /><br />
+
+<button style="color:green" 
+        [style.font-weight]="isBold ? 'bold' : ''" 
+        [style.font-size.%]="fontSize">
+    Style Binding
+</button>
+
+<button style="color:green"
+        [ngStyle]="getStyles()">
+    ngStyle Binding
+</button>
+
+<br /><br />
 
 <input type="text" name="name" id="textId" value="Test" />
 <my-employee></my-employee>

@@ -15,6 +15,8 @@ var AppComponent = (function () {
         this.isDisabled = true;
         this.applyClasses = "italicClass";
         this.isApplyRedClass = "redClass";
+        this.isBold = true;
+        this.fontSize = 30;
     }
     AppComponent.prototype.getClasses = function () {
         var classes = {
@@ -22,6 +24,13 @@ var AppComponent = (function () {
             italicClass: false
         };
         return classes;
+    };
+    AppComponent.prototype.getStyles = function () {
+        var styles = {
+            'fontWeight': this.isBold ? 'bold' : '',
+            'fontSize.px': this.fontSize
+        };
+        return styles;
     };
     return AppComponent;
 }());

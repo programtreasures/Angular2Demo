@@ -21,4 +21,16 @@ export class AppComponent {
         }
         return classes;
     }
+
+    isBold: boolean = true;
+    fontSize: number = 30;
+
+    getStyles() {
+        let styles = {
+            'fontWeight': this.isBold ? 'bold' : '',
+            'fontSize.px': this.fontSize
+        }
+
+        return styles;
+    }
 }
