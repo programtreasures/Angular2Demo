@@ -1,0 +1,21 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>EmailId</th>
+            <th>Date of Joining</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.code}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.emailId}}</td>
+            <td>{{employee.dateofjoining}}</td>
+        </tr>
+        <tr *ngIf="employees.length == 0" >
+            <td colspan="4"> No records available</td>
+        </tr>
+    </tbody>    
+</table>

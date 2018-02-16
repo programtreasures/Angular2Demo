@@ -2,7 +2,8 @@
 
 @Component({
     selector: 'my-employee',
-    templateUrl: 'app/employee/employee.component.html',
+    template:'<employee-list></employee-list>',
+    //templateUrl: 'app/employee/employee.component.html',
     styles: [`table {
                 color: #369;
                 font-family: Arial, Helvetica, sans-serif;
